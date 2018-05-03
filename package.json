@@ -8,16 +8,18 @@
     "npm": "5.6.0"
   },
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run webhook\""
+    "server": "nodemon ./scripts-node/index.js",
+    "client": "npm run start --prefix scripts-web",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/karthikeyana/invoice-app.git"
   },
-  "keywords": ["invoice", "tax"],
+  "keywords": [
+    "invoice",
+    "tax"
+  ],
   "author": "limitless-mobility-team",
   "license": "ISC",
   "bugs": {
@@ -25,9 +27,10 @@
   },
   "homepage": "https://github.com/karthikeyana/invoice-app#readme",
   "devDependencies": {
-    "nodemon": "^1.17.1"
+    "nodemon": "^1.17.3"
   },
   "dependencies": {
+    "concurrently": "^3.5.1",
     "express": "^4.16.2"
   }
 }

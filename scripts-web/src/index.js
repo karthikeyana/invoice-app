@@ -5,9 +5,9 @@ import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
   <App
-    header="I am a FullStack Developer"
-    main="I am the main"
-    footer="©2018 - Karthikeyan Anbalagan. All Rights Reserved."
+    header="Tax Invoice"
+    main="Tax invoice content"
+    footer="©2018 - Limitless Mobility solution pvt ltd. All Rights Reserved."
   />,
   document.getElementById('root')
 );
